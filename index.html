@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rastgele Yemek Tarifi Üretici</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center">Rastgele Yemek Tarifi Üretici</h1>
+      <div class="text-center mt-4">
+        <button id="tarifButonu" class="btn btn-primary">
+          Rastgele Tarif Göster
+        </button>
+      </div>
+      <div class="text-center mt-4">
+        <input
+          type="text"
+          id="malzemeInput"
+          class="form-control"
+          placeholder="Malzeme girin"
+        />
+        <button id="aramaButonu" class="btn btn-success mt-2">Tarif Ara</button>
+      </div>
+      <div class="text-center mt-4">
+        <select id="kategoriSecimi" class="form-control">
+          <option value="">Kategori Seçin</option>
+        </select>
+        <button id="kategoriButonu" class="btn btn-info mt-2">
+          Kategoriye Göre Ara
+        </button>
+      </div>
+      <div id="tarif" class="mt-4 text-center"></div>
+      <div class="text-center mt-4">
+        <button
+          id="favorilereEkleButonu"
+          class="btn btn-secondary"
+          style="display: none"
+        >
+          Favorilere Ekle
+        </button>
+      </div>
+      <div
+        class="text-center mt-4"
+        id="paylasimButonlari"
+        style="display: none"
+      >
+        <button id="facebookPaylas" class="btn btn-primary">
+          Facebook'ta Paylaş
+        </button>
+        <button id="twitterPaylas" class="btn btn-info">
+          Twitter'da Paylaş
+        </button>
+      </div>
+      <div id="favoriler" class="mt-4 text-center"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
